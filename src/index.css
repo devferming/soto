@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary text-white antialiased selection:bg-gold selection:text-primary;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-primary/80 backdrop-blur-lg border-b border-white/5;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(233, 193, 82, 0.3);
+  }
+}
